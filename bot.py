@@ -1,4 +1,7 @@
 from config import TOKEN
 
 if __name__ == "__main__":
-    print("HardwareHelper бот готов к разработке")
+    if TOKEN is None:
+        print("Ошибка: токен не загружен")
+    else:
+        print("HardwareHelper бот готов к разработке")
